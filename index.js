@@ -10,6 +10,6 @@ app.use(express.json())
 app.use(express.static('public'))
 
 const PORT = 3001
-mongoose.connect(process.env.MONGO_URL) // No options needed anymore
+mongoose.connect(process.env.MONGO_URL) 
   .then(() => console.log(' Connected to MongoDB'))
   .catch((err) => console.error(' Connection error:', err.message));
